@@ -1,0 +1,158 @@
+.myBackground1 {
+    background: url("../img/bg1.png") !important;
+    height: auto !important;
+}
+
+.myTextLinks{
+  color: #4e0061 !important;
+}
+
+.myTextLinks:hover{
+  color: #390155 !important;
+}
+
+.myCenter {
+  text-align: center !important;
+}
+
+.myTextBackground {
+  background-color: rgb(207, 174, 219);
+}
+
+.myEmailPadding{
+  padding: 20px 30px;
+}
+
+@media (max-width: 540px){
+  .myEmail {
+    font-size: 15px !important;
+  }
+
+  .myNameHeader {
+    font-size: 3rem !important;
+  }
+}
+
+@media (max-width: 420px){
+  .myNameHeader {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 350px){
+  .myEmail {
+    font-size: 12px !important;
+  }
+}
+.myEmail {
+  margin: auto;
+  font-size: 25px;
+}
+
+.mySideBar{
+  background: #887694 !important;
+}
+
+.myNameHeader {
+  padding: 0px 20px;
+}
+
+.mySubtitle {
+  padding: 0px 20px;
+}
+
+.myFooterBackground {
+    background-color: rgb(207, 174, 219);
+}
+
+footer.footer .social-link {
+    background-color: rgb(123, 104, 130) !important;
+}
+
+footer.footer .social-link:hover {
+    background-color: rgb(107, 92, 113) !important;
+}
+
+.myContactSection {
+  padding: 30px 0px 0px 0px; 
+}
+
+@media (min-width: 992px){
+  .myProjectTitles {
+    padding: 30px 0px 0px 0px; 
+  }
+}
+
+.myPortfolioContainer {
+    padding: 10px 20px 20px 20px; /* top right bottom left */
+}
+
+.myPortfolioItem {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    max-width: 530px;
+    margin: auto auto 1rem;
+  }
+  
+  .myPortfolioItem .caption {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  
+  .myPortfolioItem .caption .caption-content {
+    color: #fff;
+    margin: auto 2rem 2rem;
+  }
+  
+  .myPortfolioItem .caption .caption-content h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  
+  .myPortfolioItem .caption .caption-content p {
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+  
+  @media (min-width: 992px) {
+    .myPortfolioItem {
+      max-width: none;
+      margin: 0;
+    }
+    .myPortfolioItem .caption {
+      transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+      transition: clip-path 0.25s ease-out, background-color 0.7s;
+      transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+      -webkit-clip-path: inset(0px);
+      clip-path: inset(0px);
+    }
+    .myPortfolioItem .caption .caption-content {
+      transition: opacity 0.25s;
+      margin-left: 5rem;
+      margin-right: 5rem;
+      margin-bottom: 5rem;
+    }
+    .myPortfolioItem img {
+      transition: -webkit-clip-path 0.25s ease-out;
+      transition: clip-path 0.25s ease-out;
+      transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+      -webkit-clip-path: inset(-1px);
+      clip-path: inset(-1px);
+    }
+    .myPortfolioItem:hover img {
+      -webkit-clip-path: inset(2rem);
+      clip-path: inset(2rem);
+    }
+    .myPortfolioItem:hover .caption {
+      background-color: rgb(161 135 167 / 80%) !important;
+      -webkit-clip-path: inset(2rem);
+      clip-path: inset(2rem);
+    }
+  }
