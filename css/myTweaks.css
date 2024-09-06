@@ -1,5 +1,12 @@
+/* :root {
+  --background-color: #130a14;
+  --primary-color: #c0abd4;
+  --text-color: #edecee
+} */
+
 .myBackground1 {
-    background: url("../img/bg4.png"); !important; 
+    background: url("../img/bg4.png") !important; 
+    /* background-color: var(--background-color, #130a14) !important; */
     height: auto !important;
 }
 
@@ -17,6 +24,7 @@
 
 .myTextBackground {
   background-color: rgb(207, 174, 219);
+  /* background-color: var(--primary-color, #130a14); */
 }
 
 .myEmailPadding{
